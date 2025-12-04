@@ -1,20 +1,9 @@
   const images = [
-    "/content/lateralI.webp",
-    "/content/frontal.webp",
-    "/content/lateralD.webp",
-    "/content/salon1.webp",
-    "/content/dormitorio1.webp",
-    "/content/cocina1.webp",
-    "/content/dormitorio2.webp",  
-    "/content/salon2.webp",
-    "/content/salon3.webp",
-    "/content/aseo1.webp",
-    "/content/comedor1.webp",
-    "/content/dormitorio3.webp",
-    "/content/aseo2.webp",
-    "/content/dormitorio4.webp",
-    "/content/aseo3.webp",
-    "/content/dormitorio5.webp"
+    "/content/full/imagenes/2507_RB_RESIDENCIAL_LAGUNA_EXT_1.webp",
+    "/content/full/imagenes/2507_RB_RESIDENCIAL_LAGUNA_EXT_2.webp",
+    "/content/full/imagenes/2507_RB_RESIDENCIAL_LAGUNA_EXT_3.webp",
+    "/content/full/imagenes/2507_RB_RESIDENCIAL_LAGUNA_EXT_4.webp",
+    "/content/full/imagenes/VISTA TERRAZA PRINCIPAL.webp"
   ];
   let currentIndex = 0;
 
@@ -116,6 +105,11 @@
 
   // Función para abrir modal de galería
   function openGaleriaModal(imagePath) {
+    // Buscar el índice de la imagen seleccionada
+    const index = images.indexOf(imagePath);
+    if (index !== -1) {
+      currentIndex = index;
+    }
     document.getElementById('modalImage').src = imagePath;
     document.getElementById('imageModal').classList.remove('hidden');
     document.addEventListener('keydown', handleKeydown);
