@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Edificio Antae es tu nuevo hogar en Laguna de Duero, con terrazas amplias, piscina y rodeado de naturaleza. Descubre nuestras viviendas de 2, 3 y 4 dormitorios diseñadas para tu confort y calidad de vida.">
-  <title>Edificio Antae</title>
+  <meta name="description" content="Antae II es tu nuevo hogar en Laguna de Duero, con terrazas amplias, piscina y rodeado de naturaleza. Descubre nuestras viviendas de 2, 3 y 4 dormitorios diseñadas para tu confort y calidad de vida.">
+  <title>Antae II</title>
   <link rel="icon" type="image/svg" href="/content/iconos/torcasa.webp">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="/index.js"></script>
@@ -13,10 +13,10 @@
       theme: {
         extend: {
           colors: {
-            primary: '#119A80',
-            muted: 'hsl(169, 66%, 41%)',
+            primary: '#265d5d',
+            muted: 'hsl(180, 42%, 36%)',
             background: '#ffffff',
-            foreground: '#f3f4f6',
+            foreground: '#f4f2f1',
           },
           screens: {
             'xs': '414px',
@@ -38,7 +38,7 @@
   <header id="header" class="fixed top-0 z-50 w-full transition-all duration-300">
     <div class="container flex h-16 md:h-24 items-center justify-between">
       <a href="#inicio" class="flex items-center space-x-2">
-        <span id="headerTitle" class="text-xl md:text-2xl font-bold text-white">Edificio Antae</span>
+        <span id="headerTitle" class="text-xl md:text-2xl font-bold text-white">Antae II</span>
       </a>
       <nav id="headerNav" class="hidden md:flex gap-6">
         <a href="#caracteristicas" class="text-sm md:text-base font-medium hover:underline underline-offset-4 text-white">
@@ -86,11 +86,11 @@
       </div>
     </section>
 
-    <section id="caracteristicas" class="py-16 md:py-24 bg-foreground">
+    <section id="caracteristicas" class="py-16 md:py-24 bg-background">
       <div class="container">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-24">Características principales</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-background p-6 rounded-lg flex flex-col items-center">
+          <div class="bg-foreground p-6 rounded-lg flex flex-col items-center">
             <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center -mt-10 mb-4">
               <img src="/content/iconos/ubicacion.svg" alt="Ubicación" class="w-8 h-8 brightness-0 invert">
             </div>
@@ -99,7 +99,7 @@
              Situado a 5 minutos de Laguna de Duero y próximo a la naturaleza.
             </p>
           </div>
-          <div class="bg-background p-6 rounded-lg flex flex-col items-center">
+          <div class="bg-foreground p-6 rounded-lg flex flex-col items-center">
             <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center -mt-10 mb-4">
               <img src="/content/iconos/terraza.svg" alt="Terraza" class="w-8 h-8 brightness-0 invert">
             </div>
@@ -108,7 +108,7 @@
               Todas las viviendas cuentan con amplias terrazas.
             </p>
           </div>
-          <div class="bg-background p-6 rounded-lg flex flex-col items-center">
+          <div class="bg-foreground p-6 rounded-lg flex flex-col items-center">
             <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center -mt-10 mb-4">
               <img src="/content/iconos/piscina.svg" alt="Piscina" class="w-8 h-8 brightness-0 invert">
             </div>
@@ -121,7 +121,7 @@
       </div>
     </section>
 
-    <section id="descripcion" class="py-16 md:py-24">
+    <section id="descripcion" class="py-16 md:py-24 bg-foreground">
       <div class="container">
         <div class="grid md:grid-cols-2 gap-8 items-center">
           <!-- Descripción -->
@@ -136,12 +136,12 @@
           </div>
           <!-- Imagen -->
           <div class="order-1 md:order-2">
-            <img src="/content/full/imagenes/2507_RB_RESIDENCIAL_LAGUNA_EXT_3.webp" alt="Edificio Antae" class="rounded-lg shadow-lg object-cover w-full h-80 md:h-full">
+            <img src="/content/full/imagenes/2507_RB_RESIDENCIAL_LAGUNA_EXT_3.webp" alt="Antae II" class="rounded-lg shadow-lg object-cover w-full h-80 md:h-full">
           </div>
         </div>
       </div>
     </section>
-    <section id="galeria" class="py-16 md:py-24 bg-foreground">
+    <section id="galeria" class="py-16 md:py-24 bg-background">
       <div class="container">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Galería</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -311,7 +311,7 @@
         </div>
       </div>
     </section>
-    <section id="ubicacion" class="py-16 md:py-24">
+    <section id="ubicacion" class="py-16 md:py-24 bg-foreground">
       <div class="container">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Ubicación privilegiada</h2>
         <div class="grid md:grid-cols-5 gap-8 items-center">
@@ -339,7 +339,7 @@
         </div>
       </div>
     </section>
-    <section id="contacto" class="py-16 md:py-24 bg-foreground">
+    <section id="contacto" class="py-16 md:py-24 bg-background">
       <div class="container">
         <div class="grid md:grid-cols-2 gap-8">
           <div>
@@ -360,7 +360,7 @@
               
             </div>
           </div>
-          <div class="bg-foreground p-6 rounded-lg">
+          <div class="bg-background p-6 rounded-lg">
             <form class="space-y-4" action="" method="POST">
               <div class="grid md:grid-cols-1 gap-4">
                 <div>
@@ -382,7 +382,7 @@
                 </label>
                 <textarea id="mensaje" placeholder="¿Qué te gustaría saber?" name="mensaje" class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">Hola, me interesa esta promoción y me gustaría hacer una visita. Un saludo</textarea>
               </div>
-              <button type="submit" class="w-full inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-white hover:bg-primary/90 h-10 px-4 py-2">
+              <button type="submit" class="w-full inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-foreground text-black hover:bg-primary hover:text-white h-10 px-4 py-2">
                 Enviar
               </button>
             </form>
@@ -413,19 +413,19 @@
 
   </main>
    
-  <footer class="border-t py-8">
+  <footer class="border-t py-8 bg-primary">
     <div class="container">
       <div class="grid md:grid-cols-2 gap-8">
         <div>
           <img src="/content/iconos/torcasa.webp" alt="Torcasa" class="h-8 mb-4">
-          <p class="text-sm text-gray-500">
+          <p class="text-sm text-white">
             Más de 43 años construyendo hogares.
           </p>
         </div>
         
        
       </div>
-      <div class="mt-8 pt-8 border-t text-center text-sm text-gray-500">
+      <div class="mt-8 pt-8 border-t text-center text-sm text-white">
       
       </div>
     </div>
