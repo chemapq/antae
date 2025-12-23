@@ -220,10 +220,6 @@ document.addEventListener('DOMContentLoaded', function () {
       // Cambiar logo al hacer scroll
       if (headerLogo) {
         headerLogo.src = '/content/iconos/antae.png';
-        headerLogo.onerror = function () {
-          // Fallback si berey.png no existe
-          this.src = '/content/iconos/antae.webp';
-        };
       }
     } else {
       header.classList.remove('bg-background/95', 'backdrop-blur', 'supports-[backdrop-filter]:bg-background/60');
@@ -237,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       // Restaurar logo al estado inicial
       if (headerLogo) {
-        headerLogo.src = '/content/iconos/antae.webp';
+        headerLogo.src = '/content/iconos/antae-blanco.png';
       }
     }
   });
