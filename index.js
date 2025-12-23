@@ -204,6 +204,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const header = document.getElementById('header');
   const headerTitle = document.getElementById('headerTitle');
   const headerNav = document.getElementById('headerNav');
+  const headerLogo = document.querySelector('#headerTitle img');
 
   window.addEventListener('scroll', function () {
     if (window.scrollY > 50) {
@@ -216,6 +217,14 @@ document.addEventListener('DOMContentLoaded', function () {
           link.classList.add('text-black');
         });
       }
+      // Cambiar logo al hacer scroll
+      if (headerLogo) {
+        headerLogo.src = '/content/iconos/antae.png';
+        headerLogo.onerror = function () {
+          // Fallback si berey.png no existe
+          this.src = '/content/iconos/antae.webp';
+        };
+      }
     } else {
       header.classList.remove('bg-background/95', 'backdrop-blur', 'supports-[backdrop-filter]:bg-background/60');
       headerTitle.classList.add('text-white');
@@ -225,6 +234,10 @@ document.addEventListener('DOMContentLoaded', function () {
           link.classList.add('text-white');
           link.classList.remove('text-black');
         });
+      }
+      // Restaurar logo al estado inicial
+      if (headerLogo) {
+        headerLogo.src = '/content/iconos/antae.webp';
       }
     }
   });
