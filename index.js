@@ -3,7 +3,7 @@ const images = [
   "/content/full/imagenes/2507_RB_RESIDENCIAL_LAGUNA_EXT_2.webp",
   "/content/full/imagenes/2507_RB_RESIDENCIAL_LAGUNA_EXT_3.webp",
   "/content/full/imagenes/2507_RB_RESIDENCIAL_LAGUNA_EXT_4.webp",
-  "/content/full/imagenes/VISTA TERRAZA PRINCIPAL.webp"
+  "/content/full/imagenes/VISTA-TERRAZA-PRINCIPAL.webp"
 ];
 let currentIndex = 0;
 
