@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.addEventListener('scroll', function () {
     if (window.scrollY > 50) {
-      header.classList.add('bg-background/95', 'backdrop-blur', 'supports-[backdrop-filter]:bg-background/60');
+      header.classList.add('bg-background', 'backdrop-blur', 'supports-[backdrop-filter]:bg-background');
       headerTitle.classList.remove('text-white');
       headerTitle.classList.add('text-black');
       if (headerNav) {
@@ -217,12 +217,9 @@ document.addEventListener('DOMContentLoaded', function () {
           link.classList.add('text-black');
         });
       }
-      // Cambiar logo al hacer scroll
-      if (headerLogo) {
-        headerLogo.src = '/content/iconos/antae.png';
-      }
+      
     } else {
-      header.classList.remove('bg-background/95', 'backdrop-blur', 'supports-[backdrop-filter]:bg-background/60');
+      header.classList.remove('bg-background', 'backdrop-blur', 'supports-[backdrop-filter]:bg-background');
       headerTitle.classList.add('text-white');
       headerTitle.classList.remove('text-black');
       if (headerNav) {
@@ -230,10 +227,6 @@ document.addEventListener('DOMContentLoaded', function () {
           link.classList.add('text-white');
           link.classList.remove('text-black');
         });
-      }
-      // Restaurar logo al estado inicial
-      if (headerLogo) {
-        headerLogo.src = '/content/iconos/antae-blanco.png';
       }
     }
   });
